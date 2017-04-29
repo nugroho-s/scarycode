@@ -8,9 +8,7 @@ use Illuminate\Http\Request;
 class postController extends Controller
 {
     public function test(){
-        $posts = DB::table('posts')->get();
-        foreach ($posts as $post) {
-            echo $post->title;
-        }
+        $posts = DB::table('posts')->latest()->get();
+        return \View::make('home', compact("posts"));
     }
 }
