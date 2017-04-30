@@ -12,3 +12,7 @@
 */
 
 Route::get('/', ['uses'=>'postController@test']);
+
+Route::get('/about', function(){
+    return view('about-me');
+});
