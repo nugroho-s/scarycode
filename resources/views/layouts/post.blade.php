@@ -10,6 +10,7 @@
     <meta name="author" content="">
 
     <title>@yield('title')</title>
+    <link rel="icon" href="../img/favicon.ico" />
 
     <!-- Bootstrap Core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
