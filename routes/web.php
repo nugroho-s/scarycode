@@ -11,8 +11,10 @@
 |
 */
 
-Route::get('/', ['uses'=>'postController@test']);
+Route::get('/', ['uses'=>'postController@allPost']);
 
 Route::get('/about', function(){
     return view('about-me');
 });
+
+Route::get('/post/{id}',['uses'=>'postController@viewPost']);
