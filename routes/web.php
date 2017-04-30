@@ -18,3 +18,5 @@ Route::get('/about', function(){
 });
 
 Route::get('/post/{id}',['uses'=>'postController@viewPost']);
+
+Route::get('/search', ['uses'=>'searchController@search']);
