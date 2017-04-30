@@ -32,7 +32,15 @@
 </head>
 
 <body>
-
+    <!-- facebook SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v2.9&appId=1711922515774906";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
@@ -62,7 +70,15 @@
 
     <!-- Main Content -->
     <div class="container">
-        @yield('content')
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                @yield('content')
+            </div>
+            <div class="col-lg-2 col-md-1">
+                <h4>Follow me on FB</h4>
+                <div class="fb-follow" data-href="https://www.facebook.com/nugroho.s012" data-layout="box_count" data-size="small" data-show-faces="true"></div>
+            </div>
+        </div>
     </div>
 
     <hr>
