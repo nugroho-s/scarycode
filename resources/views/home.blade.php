@@ -40,7 +40,7 @@
                     {{ $post->title }}
                 </h2>
                 <h3 class="post-subtitle">
-                    {{ $post->content }}
+                    {{ $post->subtitle }}
                 </h3>
             </a>
             <p class="post-meta">Posted by <a href="#">{{ $post->creator }}</a> on {{ $post->created_at }} on <a href="">{{ $post->category }}</a></p>

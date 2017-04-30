@@ -17,6 +17,7 @@ class CreatePostsTable extends Migration
             $table->increments('id');
             $table->timestamps('created_on');
             $table->string('title', 40);
+            $table->string('subtitle', 60);
             $table->text('content');
             $table->string('creator', 15);
             $table->string('category', 15);
