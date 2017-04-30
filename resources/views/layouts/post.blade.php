@@ -28,6 +28,27 @@
     <link href="../Styles/shCore.css" rel="stylesheet" type="text/css" />
     <link href="../Styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
 
+    <style>
+    /*CSS search*/
+    input[type=text] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: white;
+        background-image: url('img/searchicon.png');
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    input[type=text]:focus {
+        width: 100%;
+    }
+    </style>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -116,6 +137,11 @@
                 </div>
                 <!-- FB Follow -->
                 <div class="col-lg-2 col-md-1">
+                    <h4>Search</h4>
+                    <form action='/search'>
+                        <input type="text" name="search" placeholder="Search..">
+                    </form>
+                    <hr/>
                     <h4>Follow me on FB</h4>
                     <div class="fb-follow" data-href="https://www.facebook.com/nugroho.s012" data-layout="button_count" data-size="small" data-show-faces="true"></div>
                 </div>

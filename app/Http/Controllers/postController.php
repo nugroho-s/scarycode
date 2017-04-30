@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class postController extends Controller
 {
     public function allPost(){
-        $posts = DB::table('posts')->latest()->get();
+        $posts = DB::table('posts')->select('id','created_at','title','subtitle','creator','category')->latest()->get();
         return \View::make('home', compact("posts"));
     }
 
