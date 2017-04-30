@@ -38,6 +38,15 @@
 </head>
 
 <body>
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=1711922515774906";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -93,11 +102,25 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     @yield('content')
                 </div>
+                <!-- FB Follow -->
+                <div class="col-lg-2 col-md-1">
+                    <h4>Follow me on FB</h4>
+                    <div class="fb-follow" data-href="https://www.facebook.com/nugroho.s012" data-layout="standard" data-size="small" data-show-faces="true"></div>
+                </div>
             </div>
         </div>
     </article>
 
     <hr>
+
+    <!-- FB Comments -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="fb-comments" data-href="http://scarycode.herokuapp.com/post/{{$post->id}}" data-numposts="5"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -130,7 +153,7 @@
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2016</p>
+                    <p class="copyright text-muted">Copyright &copy; Scary Code 2017</p>
                 </div>
             </div>
         </div>
