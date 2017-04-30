@@ -22,6 +22,12 @@
     <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
+    <!-- Syntax Highlighter -->
+    <script type="text/javascript" src="../Scripts/shCore.js"></script>
+    <script type="text/javascript" src="../Scripts/shBrushJScript.js"></script>
+    <link href="../Styles/shCore.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/shThemeDefault.css" rel="stylesheet" type="text/css" />
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -142,6 +148,11 @@
 
     <!-- Theme JavaScript -->
     <script src="../js/clean-blog.min.js"></script>
+
+    <!-- Run SyntaxHighlighter -->
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
 
 </body>
 
