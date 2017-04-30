@@ -128,7 +128,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="fb-comments" data-href="http://scarycode.herokuapp.com/post/{{$post->id}}" data-numposts="5"></div>
+                <div class="fb-comments" data-href="https://developers.facebook.com/apps/1711922515774906/post/{{$post->id}}" data-numposts="5"></div>
             </div>
         </div>
     </div>
