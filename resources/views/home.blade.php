@@ -54,5 +54,8 @@
             </li>
         </ul>
     </div>
+    <div class="col-lg-2 col-md-1">
+        <p>coba coba coba coba coba coba coba coba coba coba coba coba</p>
+    </div>
 </div>
 @endsection
