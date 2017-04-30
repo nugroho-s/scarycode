@@ -77,7 +77,7 @@
             </div>
             <div class="col-lg-2 col-md-1">
                 <h4>Follow me on FB</h4>
-                <div class="fb-follow" data-href="https://www.facebook.com/nugroho.s012" data-layout="box_count" data-size="small" data-show-faces="true"></div>
+                <div class="fb-follow" data-href="https://www.facebook.com/nugroho.s012" data-layout="button_count" data-size="small" data-show-faces="true"></div>
             </div>
         </div>
     </div>
