@@ -112,7 +112,7 @@
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     @yield('content')
                     <br/>
-                    <div class="fb-like" data-share="true" data-layout="standard" data-size="small" data-show-faces="true"></div>
+                    <div class="fb-like" data-share="true" data-layout="button_count" data-size="small" data-show-faces="true"></div>
                 </div>
                 <!-- FB Follow -->
                 <div class="col-lg-2 col-md-1">
